@@ -13,6 +13,7 @@ def index():
 def about():
     print("ABOUT...")
     return "About Me"
+
     #return render_template("about.html")
 
 @home_routes.route("/another")
@@ -34,3 +35,4 @@ def hello_world():
     message = f"Hello, {name}!"
     return message
     #return render_template("hello.html", message=message)
+
