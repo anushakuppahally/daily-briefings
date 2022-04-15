@@ -37,7 +37,7 @@ def weather_forecast():
     elif request.method == "POST": # the form will send a POST
         print("FORM DATA:", dict(request.form))
         request_data = dict(request.form)
-
+        
     country_code = request_data.get("country_code") or "US"
     zip_code = request_data.get("zip_code") or "20057"
 
