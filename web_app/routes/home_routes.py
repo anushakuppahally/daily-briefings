@@ -12,9 +12,8 @@ def index():
 @home_routes.route("/about")
 def about():
     print("ABOUT...")
-    #return "About Me"
-
     return render_template("about.html")
+
 
 @home_routes.route("/another")
 def another(): #need unique function name
@@ -33,6 +32,6 @@ def hello_world():
     name = request.args.get("name") or "World"
     
     message = f"Hello, {name}!"
-    #return message
     return render_template("hello.html", message=message,other="YOLO")
+
 
